@@ -5,7 +5,7 @@ export default function Footer() {
   return (
     <footer className="bg-[#1E3A8A] text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="flex flex-col md:flex-row justify-center items-start md:items-start gap-12 md:gap-20 lg:gap-32">
+        <div className="flex flex-col md:flex-row justify-center items-center md:items-start gap-12 md:gap-20 lg:gap-32">
           {/* Quick Links */}
           <div>
             <h3 className="font-semibold mb-4 text-center">Quick Links</h3>
@@ -35,7 +35,7 @@ export default function Footer() {
           </div>
 
           {/* Schedule Service Button */}
-          <div className="flex items-start pt-8">
+          <div className="flex items-center md:items-start md:pt-8">
             <Link
               to="/contact"
               className="inline-block bg-[#4A8FAE] text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-[#5a9fbe] transition-colors"
@@ -46,7 +46,7 @@ export default function Footer() {
 
           {/* Contact Info */}
           <div>
-            <h3 className="font-semibold mb-4">Contact Us</h3>
+            <h3 className="font-semibold mb-4 text-center md:text-left">Contact Us</h3>
             <ul className="space-y-3">
               <li className="flex items-start gap-2">
                 <Phone size={18} className="text-[#4A8FAE] mt-1 flex-shrink-0" />

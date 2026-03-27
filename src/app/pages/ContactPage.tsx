@@ -50,8 +50,8 @@ export default function ContactPage() {
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-[#4A8FAE] to-[#1E3A8A] text-white py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-5xl font-bold mb-6">Schedule Your Service</h1>
-          <p className="text-2xl max-w-3xl mx-auto">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6">Schedule Your Service</h1>
+          <p className="text-lg sm:text-xl md:text-2xl max-w-3xl mx-auto">
             Ready to experience the Supreme Klene difference? Get in touch with us today!
           </p>
         </div>

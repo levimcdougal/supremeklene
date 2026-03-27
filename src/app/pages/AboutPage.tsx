@@ -32,7 +32,7 @@ export default function AboutPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h1 className="text-5xl font-bold mb-6">About Supreme Klene</h1>
+              <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6">About Supreme Klene</h1>
               <p className="text-xl leading-relaxed">
                 Your trusted partner for professional residential and commercial cleaning services in Cincinnati, OH and surrounding areas.
               </p>

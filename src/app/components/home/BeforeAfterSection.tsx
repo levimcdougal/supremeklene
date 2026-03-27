@@ -59,12 +59,12 @@ export default function BeforeAfterSection() {
           </p>
         </div>
 
-        <div className="mb-8 flex justify-center gap-4 flex-wrap">
+        <div className="mb-8 flex justify-center gap-2 sm:gap-4 flex-wrap">
           {beforeAfterItems.map((item, index) => (
             <button
               key={index}
               onClick={() => setActiveIndex(index)}
-              className={`px-6 py-3 rounded-lg font-semibold transition-all ${
+              className={`px-3 py-2 sm:px-6 sm:py-3 rounded-lg font-semibold text-sm sm:text-base transition-all ${
                 activeIndex === index
                   ? "bg-[#6B9080] text-white"
                   : "bg-gray-100 text-gray-700 hover:bg-gray-200"
@@ -77,33 +77,31 @@ export default function BeforeAfterSection() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-6xl mx-auto">
           <div className="relative group flex justify-center items-center overflow-hidden rounded-xl">
-            <div className="absolute top-12 left-12 bg-red-500 text-white px-4 py-2 rounded-lg font-semibold z-10">
+            <div className="absolute top-4 left-4 sm:top-12 sm:left-12 bg-red-500 text-white px-3 py-1.5 sm:px-4 sm:py-2 rounded-lg font-semibold z-10 text-sm sm:text-base">
               Before
             </div>
             <ImageWithFallback
               src={beforeAfterItems[activeIndex].before}
               alt="Before cleaning"
-              className={`shadow-lg ${
+              className={`shadow-lg rounded-xl ${
                 beforeAfterItems[activeIndex].rotate
-                  ? "-rotate-90 h-[500px] w-auto"
-                  : "w-full h-96 object-cover"
-              } rounded-xl`}
-              isUnsplash={beforeAfterItems[activeIndex].isUnsplash}
+                  ? "w-full h-64 object-cover sm:h-96 md:h-auto md:w-auto md:max-h-[500px] md:-rotate-90"
+                  : "w-full h-64 sm:h-96 object-cover"
+              }`}
             />
           </div>
           <div className="relative group flex justify-center items-center overflow-hidden rounded-xl">
-            <div className="absolute top-12 left-12 bg-green-500 text-white px-4 py-2 rounded-lg font-semibold z-10">
+            <div className="absolute top-4 left-4 sm:top-12 sm:left-12 bg-green-500 text-white px-3 py-1.5 sm:px-4 sm:py-2 rounded-lg font-semibold z-10 text-sm sm:text-base">
               After
             </div>
             <ImageWithFallback
               src={beforeAfterItems[activeIndex].after}
               alt="After cleaning"
-              className={`shadow-lg ${
+              className={`shadow-lg rounded-xl ${
                 beforeAfterItems[activeIndex].rotate
-                  ? "-rotate-90 h-[500px] w-auto"
-                  : "w-full h-96 object-cover"
-              } rounded-xl`}
-              isUnsplash={beforeAfterItems[activeIndex].isUnsplash}
+                  ? "w-full h-64 object-cover sm:h-96 md:h-auto md:w-auto md:max-h-[500px] md:-rotate-90"
+                  : "w-full h-64 sm:h-96 object-cover"
+              }`}
             />
           </div>
         </div>

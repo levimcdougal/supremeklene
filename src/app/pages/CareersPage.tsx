@@ -34,8 +34,8 @@ export default function CareersPage() {
               <Briefcase size={40} />
             </div>
           </div>
-          <h1 className="text-5xl font-bold mb-6">Join Our Team</h1>
-          <p className="text-2xl max-w-3xl mx-auto">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6">Join Our Team</h1>
+          <p className="text-lg sm:text-xl md:text-2xl max-w-3xl mx-auto">
             Be part of Cincinnati's premier cleaning service and make a difference in people's lives
           </p>
         </div>
@@ -111,7 +111,7 @@ export default function CareersPage() {
                 <h3 className="text-xl font-semibold text-gray-900 mb-3">Email Us</h3>
                 <a
                   href="mailto:klenesupreme23@gmail.com"
-                  className="text-lg text-[#4A8FAE] hover:text-[#1E3A8A] transition-colors whitespace-nowrap"
+                  className="text-lg text-[#4A8FAE] hover:text-[#1E3A8A] transition-colors break-all"
                 >
                   klenesupreme23@gmail.com
                 </a>
