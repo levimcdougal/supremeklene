@@ -11,7 +11,7 @@ export default function ServiceAreaSection() {
             </div>
           </div>
           
-          <h2 className="text-4xl font-bold mb-4">Area</h2>
+          <h2 className="text-4xl font-bold mb-4">Service Area</h2>
           <p className="text-2xl mb-6">Proudly Serving Cincinnati, OH & Surrounding Areas</p>
           
           <div className="max-w-3xl mx-auto">
